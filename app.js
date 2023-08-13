@@ -55,6 +55,7 @@ function limpiarObjeto() {
 
 function mostrarEmpleados() {
     limpiarHTML();
+    
 
     const divEmpleados = document.querySelector('.div-empleados');
     
