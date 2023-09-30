@@ -4,6 +4,32 @@
     box-sizing: border-box;
 }
 
+header{
+    display:flex ;
+    min-height: 60px;
+    justify-content: space-between;
+    background-color: grey;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: bisque;
+}
 
 body {
     background-color: bisque;
@@ -120,4 +146,30 @@ hr {
 
 .btn-eliminar {
     background-color: red;
+}
+
+/*seccion footer*/
+
+footer{
+    background-color: gray;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
 }
